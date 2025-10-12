@@ -27,6 +27,7 @@
     form {
       display: flex;
       flex-direction: column;
+      margin-bottom: 2rem;
     }
     label {
       margin-top: 1rem;
@@ -52,6 +53,10 @@
       font-size: 0.9rem;
       color: #666;
     }
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -60,7 +65,7 @@
     <p>Powered by JID Holdings LLC</p>
   </header>
   <main>
-    <h2>Join Sol's Circle</h2>
+    <h2>Opt In to Receive Messages</h2>
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <label for="name">Name</label>
       <input type="text" name="name" required />
@@ -77,6 +82,19 @@
       </label>
 
       <button type="submit">Opt In</button>
+    </form>
+
+    <h2>Opt Out of Messages</h2>
+    <form action="https://formspree.io/f/xkgqpgbo" method="POST">
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" required />
+
+      <input type="hidden" name="optout" value="true" />
+
+      <button type="submit">Opt Out</button>
     </form>
   </main>
   <footer>
