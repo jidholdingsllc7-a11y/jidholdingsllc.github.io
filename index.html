@@ -18,24 +18,22 @@
       text-align: center;
     }
     nav {
+      background: #444;
       display: flex;
       justify-content: center;
-      background: #444;
     }
-    nav button {
-      background: #444;
+    nav a {
       color: #fff;
-      border: none;
       padding: 1rem;
-      cursor: pointer;
-      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav button.active {
+    nav a:hover {
       background: #0077cc;
     }
     main {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 600px;
       margin: auto;
       background: #fff;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -73,17 +71,6 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 0.5rem;
     }
-    .tab-content {
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-    }
-    iframe {
-      width: 100%;
-      height: 1200px;
-      border: none;
-    }
   </style>
 </head>
 <body>
@@ -92,69 +79,48 @@
     <p>Powered by JID Holdings LLC</p>
   </header>
 
-  <!-- Navigation Tabs -->
+  <!-- Navigation bar -->
   <nav>
-    <button id="storeTab" class="active" onclick="showTab('store')">Store</button>
-    <button id="optTab" onclick="showTab('opt')">Opt In/Out</button>
+    <a href="https://jid-holdings-llc.myshopify.com/" target="_blank">Store</a>
+    <a href="#opt">Opt In/Out</a>
   </nav>
 
-  <main>
-    <!-- Store Tab -->
-    <div id="store" class="tab-content active">
-      <h2>Our Store</h2>
-      <iframe src="https://jid-holdings-llc.myshopify.com/"></iframe>
-    </div>
+  <main id="opt">
+    <h2>Opt In to Receive Messages</h2>
+    <form action="https://formspree.io/f/xkgqpgbo" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
 
-    <!-- Opt In/Out Tab -->
-    <div id="opt" class="tab-content">
-      <h2>Opt In to Receive Messages</h2>
-      <form action="https://formspree.io/f/xkgqpgbo" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" required />
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" required />
 
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" required />
+      <label>
+        <input type="checkbox" name="consent" required />
+        I consent to receive marketing messages from Sol via SMS. Message & data rates may apply.
+      </label>
 
-        <label>
-          <input type="checkbox" name="consent" required />
-          I consent to receive marketing messages from Sol via SMS. Message & data rates may apply.
-        </label>
+      <button type="submit">Opt In</button>
+    </form>
 
-        <button type="submit">Opt In</button>
-      </form>
+    <h2>Opt Out of Messages</h2>
+    <form action="https://formspree.io/f/xkgqpgbo" method="POST">
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
 
-      <h2>Opt Out of Messages</h2>
-      <form action="https://formspree.io/f/xkgqpgbo" method="POST">
-        <label for="email">Email</label>
-        <input type="email" name="email" required />
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" required />
 
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" required />
+      <input type="hidden" name="optout" value="true" />
 
-        <input type="hidden" name="optout" value="true" />
-
-        <button type="submit">Opt Out</button>
-      </form>
-    </div>
+      <button type="submit">Opt Out</button>
+    </form>
   </main>
 
   <footer>
     <p>By submitting, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
   </footer>
-
-  <script>
-    function showTab(tab) {
-      document.getElementById('store').classList.remove('active');
-      document.getElementById('opt').classList.remove('active');
-      document.getElementById('storeTab').classList.remove('active');
-      document.getElementById('optTab').classList.remove('active');
-
-      document.getElementById(tab).classList.add('active');
-      document.getElementById(tab + 'Tab').classList.add('active');
-    }
-  </script>
 </body>
 </html>
