@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,19 +59,29 @@
       padding-bottom: 0.5rem;
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 2rem 0;
+    }
+
+    table th, table td {
+      border: 1px solid #c2dfff;
+      padding: 0.75rem;
+      text-align: center;
+      background: #f0f8ff;
+    }
+
+    table th {
+      background: #d9ecff;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       color: #444;
       font-size: 0.9rem;
-    }
-
-    .pricing-box {
-      background: #f0f8ff;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-      border: 1px solid #c2dfff;
     }
   </style>
 </head>
@@ -129,17 +138,55 @@
       AthenaUI adapts to your style, your needs, and your goals.
     </p>
 
-    <h2>Pre‑Order Pricing</h2>
-    <div class="pricing-box">
-      <p><strong>Pre‑Order Price:</strong> $20/month (locked in for life)</p>
-      <p><strong>Launch Date:</strong> Saturday, February 21st, 2026 at 12:00 PM CST</p>
-    </div>
+    <h2>Pre‑Order Pricing (Lifetime‑Locked)</h2>
+
+    <table>
+      <tr>
+        <th>Subscription Period</th>
+        <th>Regular</th>
+        <th>Premium</th>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>6 Months</td>
+        <td>$50</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>12 Months</td>
+        <td>$100</td>
+        <td>$200</td>
+      </tr>
+    </table>
 
     <h2>Post‑Release Pricing</h2>
-    <div class="pricing-box">
-      <p><strong>Standard Price:</strong> $40/month</p>
-      <p><strong>Enterprise Tier:</strong> Coming soon</p>
-    </div>
+
+    <table>
+      <tr>
+        <th>Subscription Period</th>
+        <th>Regular</th>
+        <th>Premium</th>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td>$15</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>6 Months</td>
+        <td>$60</td>
+        <td>$120</td>
+      </tr>
+      <tr>
+        <td>12 Months</td>
+        <td>$120</td>
+        <td>$240</td>
+      </tr>
+    </table>
 
     <h2>AthenaUI Updates</h2>
     <p><strong>02/19/2026 —</strong> Locked in Pre‑Launch Pricing.</p>
