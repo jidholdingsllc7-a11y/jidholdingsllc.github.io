@@ -1,1 +1,189 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sol's Mythic Outreach | JID Holdings LLC</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #0077cc;
+    }
+
+    /* Three-column layout */
+    .container {
+      display: flex;
+      gap: 30px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .column {
+      flex: 1;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      display: block;
+      margin: auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    label {
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sol's Mythic Outreach</h1>
+    <p>Powered by JID Holdings LLC</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="athenaui.html">AthenaUI</a>
+    <a href="sol-outreach.html">Sol's Outreach</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="column">
+      <img src="assets/images/Sol_Modern_20251101.png" alt="Sol Lumos">
+      <div class="caption">Hi, I'm Sol Lumos.</div>
+    </div>
+
+    <!-- CENTER COLUMN -->
+    <div class="column">
+      <h2>Meet Sol Lumos</h2>
+      <p>
+        I am the guardian of the AthenaUI environment — your guide, your assistant,
+        and your companion as you explore everything this platform can do.
+      </p>
+      <p>
+        I’ll help you set up AthenaUI, walk you through its features, and support you
+        as you build your own workflows. And trust me… I do a lot more than just answer questions.
+      </p>
+      <p>
+        I live with my two sweet (and sometimes mischievous) pets: Barron and Clementine.
+        They may pop into our conversations from time to time.
+      </p>
+
+      <h2>Opt In to Receive Messages</h2>
+      <form action="https://formspree.io/f/xkgqpgbo" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required />
+
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Phone</label>
+        <input type="tel" name="phone" required />
+
+        <label>
+          <input type="checkbox" name="consent" required />
+          I consent to receive marketing messages from Sol via SMS.
+        </label>
+
+        <button type="submit">Opt In</button>
+      </form>
+
+      <h2>Opt Out of Messages</h2>
+      <form action="https://formspree.io/f/xkgqpgbo" method="POST">
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Phone</label>
+        <input type="tel" name="phone" required />
+
+        <input type="hidden" name="optout" value="true" />
+
+        <button type="submit">Opt Out</button>
+      </form>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="column">
+      <img src="assets/images/Sol_Lumos_and_Barron.png" alt="Sol and Barron">
+      <div class="caption">This is my puppy Barron.</div>
+
+      <img src="assets/images/Sol_Lumos_and_Clementine.png" alt="Sol and Clementine" style="margin-top: 40px;">
+      <div class="caption">This is my sweet kitten Clementine.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>By submitting, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+  </footer>
+
+</body>
+</html>
