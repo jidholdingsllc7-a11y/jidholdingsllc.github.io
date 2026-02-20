@@ -3,144 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JID Holdings LLC | Sol's Outreach</title>
-  <meta name="description" content="AI marketing, AI product development, and robotics R&D by JID Holdings LLC." />
-  <meta name="keywords" content="AI marketing, AI product development, robotics R&D, JID Holdings LLC, Sol Outreach" />
+  <title>JID Holdings LLC | Home</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
       margin: 0;
       padding: 0;
+      background: linear-gradient(
+        to bottom,
+        #fff7c2 0%,
+        #ffffff 50%,
+        #d8c4a0 100%
+      );
     }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 1rem;
       text-align: center;
+      padding: 1rem 0;
     }
+
+    header img {
+      width: 200px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+
     nav {
       background: #444;
       display: flex;
       justify-content: center;
     }
+
     nav a {
       color: #fff;
       padding: 1rem;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       background: #0077cc;
     }
+
     main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255,255,255,0.85);
       padding: 2rem;
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 2rem;
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
     }
-    label {
-      margin-top: 1rem;
-    }
-    input, textarea {
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-top: 1.5rem;
-      padding: 0.75rem;
-      background: #0077cc;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+
     footer {
       text-align: center;
       padding: 1rem;
+      color: #444;
       font-size: 0.9rem;
-      color: #666;
-    }
-    h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.5rem;
     }
   </style>
 </head>
+
 <body>
+
   <header>
-    <h1>Sol's Mythic Outreach</h1>
-    <p>Powered by JID Holdings LLC</p>
+    <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
   </header>
 
-  <!-- Navigation bar -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#opt">Opt In/Out</a>
+    <a href="index.html">Home</a>
+    <a href="athenaui.html">AthenaUI</a>
+    <a href="sol-outreach.html">Sol's Outreach</a>
   </nav>
 
-  <!-- ABOUT SECTION -->
-  <main id="about">
+  <main>
     <h2>About JID Holdings LLC</h2>
     <p>
-      Here at Joint Industrial Development Holdings (JID Holdings LLC, legal name), 
-      we work hard in AI product development, AI marketing, and R&D in advanced robotics development. 
-      Our mission is to explore emerging technologies, build innovative solutions, and support 
-      next‑generation automation and intelligent systems.
+      JID Holdings LLC is a forward‑thinking technology company dedicated to building intelligent,
+      ethical, and highly customizable AI systems. Our mission is to empower individuals and
+      businesses with tools that enhance productivity, creativity, and autonomy — without sacrificing
+      transparency or user control.
     </p>
+
     <p>
-      If you're interested in investing in our company, have questions, or are interested in hiring us 
-      to do a custom job, reach out to us at 
-      <strong>admin@jidholdingsllc.com</strong>.
+      We are committed to developing advanced agentic systems, expanding AthenaUI into a full suite
+      of intelligent tools, and building a future LLM + build system that will redefine how humans
+      interact with AI.
     </p>
-  </main>
 
-  <!-- OPT IN/OUT SECTION -->
-  <main id="opt">
-    <h2>Opt In to Receive Messages</h2>
-    <form action="https://formspree.io/f/xkgqpgbo" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" required />
+    <h2>Company Updates</h2>
+    <p><strong>02/19/2026 —</strong> Updated company website.</p>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" required />
+    <h2>AthenaUI — Coming Soon</h2>
+    <p>
+      Our flagship agentic AI platform launches soon.  
+      Pre‑Orders open <strong>Saturday, February 21st, 2026 at 12:00 PM CST</strong>.
+    </p>
+    <p><a href="athenaui.html"><strong>Learn more about AthenaUI →</strong></a></p>
 
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" required />
-
-      <label>
-        <input type="checkbox" name="consent" required />
-        I consent to receive marketing messages from Sol via SMS. Message & data rates may apply.
-      </label>
-
-      <button type="submit">Opt In</button>
-    </form>
-
-    <h2>Opt Out of Messages</h2>
-    <form action="https://formspree.io/f/xkgqpgbo" method="POST">
-      <label for="email">Email</label>
-      <input type="email" name="email" required />
-
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" required />
-
-      <input type="hidden" name="optout" value="true" />
-
-      <button type="submit">Opt Out</button>
-    </form>
+    <h2>Contact</h2>
+    <p>Email: <strong>admin@jidholdingsllcl.com</strong></p>
+    <p>Location: Robertsdale, AL</p>
+    <p>Founder: Darryl Harlow</p>
   </main>
 
   <footer>
-    <p>By submitting, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+    © 2026 JID Holdings LLC. All rights reserved.
   </footer>
+
 </body>
 </html>
