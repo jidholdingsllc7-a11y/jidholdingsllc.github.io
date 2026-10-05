@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Athena UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
+                <h1>Athena UI</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="bug_report.html">Report a Bug</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" target="_blank">Download Athena UI</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions, feedback, or just want to say hello? Fill out the form below, and I’ll forward your message to the team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <form id="contact-form" action="mailto:feedback@jidholdingsllc.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Contact Us? -->
+    <section class="why-contact">
+        <div class="container">
+            <h2>Why Reach Out?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>General Questions</h3>
+                    <p>Curious about Athena UI? Ask me anything!</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Feedback</h3>
+                    <p>Share your thoughts on how we can improve.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Partnerships</h3>
+                    <p>Interested in collaborating? Let’s talk!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JID Holdings LLC. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:agent@jidholdingsllc.com">agent@jidholdingsllc.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
