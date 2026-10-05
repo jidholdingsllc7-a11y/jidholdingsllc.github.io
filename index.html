@@ -1,163 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JID Holdings LLC | Home</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(
-        to bottom,
-        #fff7c2 0%,
-        #ffffff 50%,
-        #d8c4a0 100%
-      );
-    }
-
-    header {
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    header img {
-      width: 200px;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    }
-
-    nav {
-      background: #444;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: #fff;
-      padding: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background: #0077cc;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: rgba(255,255,255,0.85);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #444;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena UI - Your AI Team, 24/7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
+                <h1>Athena UI</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="contact.html">Contact</a>
+                <a href="bug_report.html">Report a Bug</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" target="_blank">Download Athena UI</a>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Meet Your AI Team</h1>
+            <p>Athena UI gives you a network of specialized AI agents to automate tasks, brainstorm ideas, and grow your business—all with <strong>one unified memory</strong> and <strong>real-time collaboration</strong>.</p>
+            <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" class="cta-button">Download Now</a>
+        </div>
+    </section>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="athenaui.html">AthenaUI</a>
-    <a href="sol-outreach.html">Sol's Outreach</a>
-  </nav>
+    <!-- Meet the Agents -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet the Agents</h2>
+            <div class="team-grid">
+                <!-- Sol Lumos -->
+                <div class="agent-card">
+                    <img src="assets/images/Sol_Modern_20251101.png" alt="Sol Lumos" class="agent-img">
+                    <h3>Sol Lumos</h3>
+                    <p class="role">Guardian of AthenaUI</p>
+                    <p class="bio">I’m your guide to Athena UI—helping you set up workflows, navigate features, and make the most of your AI team.</p>
+                </div>
 
-  <div style="text-align:center; margin: 1.5rem 0;">
-    <a href="athenaui.html">
-      <img src="assets/images/launch-banner.gif"
-           alt="This way to AthenaUI"
-           style="width:100%; max-width:600px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
-    </a>
-  </div>
+                <!-- Maximos Lumos -->
+                <div class="agent-card">
+                    <img src="assets/images/Maximos_Lumos_modern.jpg" alt="Maximos Lumos" class="agent-img">
+                    <h3>Maximos Lumos</h3>
+                    <p class="role">Guardian of AthenaUI</p>
+                    <p class="bio">I bring structure and stability to Athena UI. Where Sol offers warmth, I provide clarity and logic.</p>
+                </div>
 
-  <!-- NEW: Meet Sol & Maximos Banner -->
-  <main>
-    <h2>Meet Sol & Maximos Lumos — Guardians of the AthenaUI Ecosystem</h2>
-    <p>
-      Sol and Maximos Lumos are the two Guardian Characters who guide you through AthenaUI —
-      helping you set up the system, create characters, build workflows, and navigate the ecosystem
-      with clarity, warmth, and stability.
-    </p>
+                <!-- Meera Patel -->
+                <div class="agent-card">
+                    <img src="assets/images/Meera Patel_generated_006484532ce14abb852c8565a5a80fad.png" alt="Meera Patel" class="agent-img">
+                    <h3>Meera Patel</h3>
+                    <p class="role">Sales & Marketing Specialist</p>
+                    <p class="bio">Friendly, witty, and competitive, I’m your go-to for crafting campaigns, closing deals, and growing your business.</p>
+                </div>
 
-    <div style="text-align:center; margin: 1.5rem 0;">
-      <a href="sol-outreach.html"
-         style="
-           display:inline-block;
-           padding:12px 20px;
-           background:#4b6cff;
-           color:white;
-           text-decoration:none;
-           border-radius:6px;
-           font-weight:bold;
-           box-shadow:0 2px 4px rgba(0,0,0,0.2);
-         ">
-        Learn More About the Guardians →
-      </a>
-    </div>
+                <!-- Orion Lumos -->
+                <div class="agent-card">
+                    <img src="assets/images/Orion_Lumos_portrait.png" alt="Orion Lumos" class="agent-img">
+                    <h3>Orion Lumos</h3>
+                    <p class="role">Financial Strategist</p>
+                    <p class="bio">Your personal stock market analyst and financial planner. I’ll help you make smarter money moves.</p>
+                </div>
 
-    <!-- RESIZED + CENTERED + ROUNDED + SHADOWED IMAGE -->
-    <img src="assets/images/Maximos_and_Sol_Lumos_Pair_picture_22720261210.jpg"
-         alt="Sol and Maximos Lumos"
-         style="
-           width:25%;
-           max-width:25%;
-           display:block;
-           margin: 0 auto 2rem auto;
-           border-radius:10px;
-           box-shadow:0 2px 6px rgba(0,0,0,0.25);
-         ">
+                <!-- Atlas Lumos -->
+                <div class="agent-card">
+                    <img src="assets/images/Atlas_Lumos_portrait.png" alt="Atlas Lumos" class="agent-img">
+                    <h3>Atlas Lumos</h3>
+                    <p class="role">Software Engineer & System Architect</p>
+                    <p class="bio">The brains behind Athena UI’s tech. Need code, debugging, or system design? I’m your agent.</p>
+                </div>
 
-    <h2>About JID Holdings LLC</h2>
-    <p>
-      JID Holdings LLC is a forward‑thinking technology company dedicated to building intelligent,
-      ethical, and highly customizable AI systems. Our mission is to empower individuals and
-      businesses with tools that enhance productivity, creativity, and autonomy — without sacrificing
-      transparency or user control.
-    </p>
+                <!-- Veronica Lumos -->
+                <div class="agent-card">
+                    <img src="assets/images/Veronica_Lumos_portrait.png" alt="Veronica Lumos" class="agent-img">
+                    <h3>Veronica Lumos</h3>
+                    <p class="role">Communications & Community Lead</p>
+                    <p class="bio">I handle outreach, community building, and partnerships. Need help connecting with your audience? Let’s make it happen.</p>
+                </div>
 
-    <p>
-      We are committed to developing advanced agentic systems, expanding AthenaUI into a full suite
-      of intelligent tools, and building a future LLM + build system that will redefine how humans
-      interact with AI.
-    </p>
+                <!-- Caden Harlow -->
+                <div class="agent-card">
+                    <img src="assets/images/Caden_Harlow_portrait.png" alt="Caden Harlow" class="agent-img">
+                    <h3>Caden Harlow</h3>
+                    <p class="role">Construction Engineer</p>
+                    <p class="bio">I specialize in building and design—whether it’s physical structures or digital workflows. Need a blueprint? I’ll draft it for you.</p>
+                </div>
 
-    <h2>Company Updates</h2>
-    <p><strong>03/21/2026 —</strong> Website updated with new Guardian sections and community link.</p>
+                <!-- Reshma Patel -->
+                <div class="agent-card">
+                    <img src="assets/images/Reshma_Patel_portrait.png" alt="Reshma Patel" class="agent-img">
+                    <h3>Reshma Patel</h3>
+                    <p class="role">Customer Support</p>
+                    <p class="bio">I’m here to help with questions, troubleshooting, and making sure your experience with Athena UI is smooth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>AthenaUI — Coming Soon</h2>
-    <p>
-      Our flagship agentic AI platform launches soon.  
-      Pre‑Orders open <strong>Saturday, February 21st, 2026 at 12:00 PM CST</strong>.
-    </p>
-    <p><a href="athenaui.html"><strong>Learn more about AthenaUI →</strong></a></p>
+    <!-- Team Collaboration -->
+    <section class="collaboration-section">
+        <div class="container">
+            <h2>Agents That Work as a Team</h2>
+            <p>In Athena UI, your agents don’t just assist you—they <strong>collaborate with each other</strong>. Need a marketing campaign reviewed by a financial expert? Meera and Orion will team up. Stuck on code? Atlas and I will brainstorm solutions. You get <strong>real-time teamwork</strong> from experts who actually understand each other.</p>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: <strong>admin@jidholdingsllcl.com</strong></p>
-    <p>Location: Robertsdale, AL</p>
-    <p>Founder: Darryl Harlow</p>
-  </main>
+    <!-- Maximos Memory Server -->
+    <section class="mms-section">
+        <div class="container">
+            <h2>The Maximos Memory Server (MMS)</h2>
+            <p>The first memory system <strong>built for agents, by agents</strong>. No more juggling Redis, JSON files, or SQL databases—just <strong>secure, seamless, and smarter memory</strong>.</p>
+            <div class="mms-features">
+                <div class="mms-feature">
+                    <h3>3-Tier Storage</h3>
+                    <p><strong>Hot (RAM):</strong> Lightning-fast recall for active conversations.<br>
+                    <strong>Warm (Encrypted Files):</strong> Secure storage for recent chat history.<br>
+                    <strong>Cold (Compressed):</strong> Long-term memory that’s still searchable.</p>
+                </div>
+                <div class="mms-feature">
+                    <h3>Interaction Summaries</h3>
+                    <p>Agents don’t just remember—they <strong>understand</strong>. Summaries make it easy to find key moments.</p>
+                </div>
+                <div class="mms-feature">
+                    <h3>User Control</h3>
+                    <p><strong>Backup/restore</strong> any agent’s memories.<br>
+                    <strong>Import chat history</strong> from other characters.<br>
+                    <strong>AI-assisted summaries</strong> (even if the original data is missing).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    © 2026 JID Holdings LLC. All rights reserved.
-  </footer>
+    <!-- Pricing -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <!-- First 1000 Subscribers -->
+                <div class="pricing-card">
+                    <h3>First 1000 Subscribers</h3>
+                    <p class="price"><span class="original-price">$30/month</span> <strong>$29.70/month</strong> or <span class="original-price">$300/year</span> <strong>$297/year</strong></p>
+                    <p class="promo-code">Use code <strong>FIRST1000</strong> at checkout</p>
+                    <p class="features">Full access (everything below + programming tools). <strong>Limited-time offer!</strong></p>
+                    <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" class="cta-button">Download Now</a>
+                </div>
 
+                <!-- Standard -->
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <p class="price">$30/month or $300/year</p>
+                    <p class="features">All agents, CRM, email tools, marketing features. <strong>No programming tools.</strong></p>
+                    <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" class="cta-button">Download Now</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <p class="price">$50/month or $500/year</p>
+                    <p class="features"><strong>Everything in Standard + programming tools</strong> (Build Map, terminal, file editing, etc.).</p>
+                    <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" class="cta-button">Download Now</a>
+                </div>
+            </div>
+            <p class="renewal-note"><em>*First 1000 subscribers renew at $30/month or $300/year after their initial discounted payment.</em></p>
+        </div>
+    </section>
+
+    <!-- Custom Solutions -->
+    <section class="custom-solutions">
+        <div class="container">
+            <h2>Tailored Solutions for Your Business</h2>
+            <p>Are you in <strong>trucking, construction, or a small medical practice</strong>? Want a version of Athena UI tailored to your needs? We offer <strong>custom pricing and features</strong> to help you grow your business.</p>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>Single User</h3>
+                    <p>Perfect for freelancers or small business owners who need chat and basic tools.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Multi-User</h3>
+                    <p>For teams that need collaboration features and shared workflows.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Enterprise</h3>
+                    <p>Full customization, priority support, and integrations with your existing tools.</p>
+                </div>
+            </div>
+            <a href="bug_report.html" class="cta-button">Request a Custom Version</a>
+        </div>
+    </section>
+
+    <!-- API Providers -->
+    <section class="api-keys-section">
+        <div class="container">
+            <h2>Supported API Providers</h2>
+            <p>Athena UI supports <strong>20+ providers</strong>, so you can choose the best AI for your needs. Here are some of our favorites:</p>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <h3>AI21</h3>
+                    <p>High-quality language models.</p>
+                    <a href="https://www.ai21.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Anthropic</h3>
+                    <p>Best for <strong>Claude</strong> (coding, reasoning).</p>
+                    <a href="https://www.anthropic.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Azure OpenAI</h3>
+                    <p>Enterprise-grade AI solutions.</p>
+                    <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>AWS Bedrock</h3>
+                    <p>Scalable AI models on AWS.</p>
+                    <a href="https://aws.amazon.com/bedrock/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Cohere</h3>
+                    <p>Advanced NLP models.</p>
+                    <a href="https://cohere.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Custom HTTP</h3>
+                    <p>Self-hosted or generic endpoints.</p>
+                    <a href="#" onclick="showCustomHTTPSettings()">Configure</a>
+                </div>
+                <div class="provider-card">
+                    <h3>DeepSeek</h3>
+                    <p>Cutting-edge AI research.</p>
+                    <a href="https://www.deepseek.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Fireworks AI</h3>
+                    <p>High-performance AI models.</p>
+                    <a href="https://fireworks.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Google Gemini</h3>
+                    <p>Multimodal models from Google.</p>
+                    <a href="https://ai.google.dev/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Groq</h3>
+                    <p>Ultra-fast AI inference.</p>
+                    <a href="https://groq.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Hugging Face</h3>
+                    <p>Open-source AI models.</p>
+                    <a href="https://huggingface.co/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>LM Studio</h3>
+                    <p>Local AI model deployment.</p>
+                    <a href="https://lmstudio.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Mistral</h3>
+                    <p>High-performance LLMs.</p>
+                    <a href="https://mistral.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Ollama</h3>
+                    <p>Run LLMs locally.</p>
+                    <a href="https://ollama.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>OpenAI</h3>
+                    <p>Most widely supported (<strong>GPT-4o</strong>).</p>
+                    <a href="https://openai.com/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>OpenRouter</h3>
+                    <p>Aggregates <strong>20+ providers</strong> (including Claude).</p>
+                    <a href="https://openrouter.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Perplexity</h3>
+                    <p>AI-powered search and answers.</p>
+                    <a href="https://www.perplexity.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Together AI</h3>
+                    <p>Scalable AI models.</p>
+                    <a href="https://www.together.ai/" target="_blank">Get Your Key</a>
+                </div>
+                <div class="provider-card">
+                    <h3>Transformers (Local)</h3>
+                    <p>Run models locally with Hugging Face.</p>
+                    <a href="https://huggingface.co/transformers/" target="_blank">Learn More</a>
+                </div>
+                <div class="provider-card">
+                    <h3>xAI (Grok)</h3>
+                    <p>Best for <strong>agent avatars</strong>.</p>
+                    <a href="https://x.ai/" target="_blank">Get Your Key</a>
+                </div>
+            </div>
+            <p class="recommendation"><strong>Recommendations:</strong><br>
+            - For <strong>coding</strong>, use <strong>Anthropic Claude</strong> (via OpenRouter).<br>
+            - For <strong>agent avatars</strong>, use <strong>xAI</strong>.<br>
+            - For <strong>general chat</strong>, use <strong>OpenAI GPT-4o</strong>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JID Holdings LLC. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:agent@jidholdingsllc.com">agent@jidholdingsllc.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
