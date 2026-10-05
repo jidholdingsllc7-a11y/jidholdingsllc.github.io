@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Bug or Request a Custom Version - Athena UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
+                <h1>Athena UI</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="contact.html">Contact</a>
+                <a href="bug_report.html">Report a Bug</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" target="_blank">Download Athena UI</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bug-report-section">
+        <div class="container">
+            <h1>Report a Bug or Request a Custom Version</h1>
+            <p>Found a bug? Want a version of Athena UI tailored to your business? Fill out the form below, and I’ll forward your request to the team.</p>
+
+            <form id="bug-report-form" action="mailto:feedback@jidholdingsllc.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="text" name="organization" placeholder="Organization (optional)">
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="tel" name="phone" placeholder="Phone number (optional)">
+                <select name="request-type" required>
+                    <option value="bug">Report a Bug</option>
+                    <option value="custom">Request a Custom Version</option>
+                </select>
+                <textarea name="description" placeholder="Describe your issue or request. If requesting a custom version, list the programs you want to interface with." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="custom-solutions">
+        <div class="container">
+            <h2>Need a Tailored Version of Athena UI?</h2>
+            <p>We build custom versions for industries like trucking, construction, and medical practices. Tell us what you need!</p>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>Single User</h3>
+                    <p>Perfect for freelancers or small business owners who need chat and basic tools.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Multi-User</h3>
+                    <p>For teams that need collaboration features and shared workflows.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Enterprise</h3>
+                    <p>Full customization, priority support, and integrations with your existing tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JID Holdings LLC. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:agent@jidholdingsllc.com">agent@jidholdingsllc.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
