@@ -28,12 +28,26 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Meet Your AI Team</h1>
-            <p>Athena UI gives you a network of specialized AI agents to automate tasks, brainstorm ideas, and grow your business—all with <strong>one unified memory</strong> and <strong>real-time collaboration</strong>.</p>
-            <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases/latest" class="cta-button">Download Now</a>
+            <h1>Your Data Is Your Data.</h1>
+            <p>Athena UI brings your AI team together around a local, encrypted vault. Your stored conversations and private records live on your machine—not in an Athena UI cloud archive.</p>
+            <p><strong>Local storage. Cloud brainpower when you choose it.</strong> When using a cloud AI provider, relevant prompts, conversation context, and any content needed for the requested task are transmitted to that provider for processing, subject to its policies. Local storage does not mean cloud providers never receive data.</p>
+            <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" class="cta-button">Explore Athena UI Downloads</a>
         </div>
     </section>
 
+    <!-- Synergy coding -->
+    <section class="feature-section" id="synergy">
+        <div class="container">
+            <h2>Meet Synergy: Two Coding Models. One Collaborative Workflow.</h2>
+            <p>Synergy isn’t another character. It pairs two coding models you choose—<strong>Code Model A</strong> and <strong>Code Model B</strong>—to analyze your request and discuss how to accomplish it.</p>
+            <ul>
+                <li><strong>Choose your pair:</strong> Select available coding models through your configured providers.</li>
+                <li><strong>Discuss the approach:</strong> Both models contribute to planning the requested program or fix.</li>
+                <li><strong>Choose a writer or share the build:</strong> After agreement, a coin toss can select the code writer, or the models can jointly create a Build Map and delegate which model writes each file.</li>
+            </ul>
+            <p>Synergy requires your own provider credentials for cloud models and access to the applicable programming tools. Both models’ usage may incur provider charges. Collaboration supports your workflow; it does not guarantee error-free code. Review and test generated changes.</p>
+        </div>
+    </section>
     <!-- Meet the Agents -->
     <section class="team-section">
         <div class="container">
@@ -76,7 +90,7 @@
                     <img src="assets/images/atlas_lumos_01.png" alt="Atlas Lumos" class="agent-img">
                     <h3>Atlas Lumos</h3>
                     <p class="role">Software Engineer & System Architect</p>
-                    <p class="bio">The brains behind Athena UI’s tech. Need code, debugging, or system design? I’m your agent. I built the Maximos Memory Server—ask me how it works!</p>
+                    <p class="bio">Software engineering, debugging, and system architecture are my specialties. I help you plan and build your projects. Maximos designed and built the Maximos Memory Server that supports our memory system.</p>
                 </div>
 
                 <!-- Veronica Lumos -->
@@ -170,9 +184,10 @@
     <!-- API Providers -->
     <section class="api-keys-section">
         <div class="container">
-            <h2>Upgrade Your Experience</h2>
-            <p><strong>Athena UI includes a basic OpenAI API key for chat and simple image generation.</strong> For <strong>tool calling, code writing, or advanced features</strong>, you’ll need to provide your own API key from a supported provider (e.g., Anthropic, OpenRouter, xAI). <strong>We recommend Anthropic Claude for coding tasks.</strong></p>
-            <p><em>Athena UI is a platform—we don’t provide full API access to third-party providers. You control your data and your keys.</em></p>
+            <h2>Your Providers. Your API Keys.</h2>
+            <p><strong>Athena UI does not include default OpenAI or ElevenLabs API access.</strong> Bring your own API credentials for cloud chat, image generation, voice services, tool calling, and coding where supported. Fund your provider accounts as required: provider usage charges are separate from your Athena UI subscription.</p>
+            <p>We provide the software that connects to AI providers—not unrestricted access to their services. Features depend on your subscription, chosen model, provider capabilities, and account limits. Locally hosted models use their own setup requirements rather than necessarily requiring a paid cloud key.</p>
+            <p><strong>Tested successfully by the development team:</strong> OpenAI, xAI, and OpenRouter. Other integrations are supported but have not all been tested. We recommend Anthropic Claude for coding; the team uses Claude through OpenRouter.</p>
             <div class="providers-grid">
                 <div class="provider-card">
                     <h3>Anthropic</h3>
@@ -213,22 +228,28 @@
         </div>
     </section>
 
+    <!-- ElevenLabs voice setup -->
+    <section class="api-keys-section" id="elevenlabs-setup" aria-labelledby="elevenlabs-heading">
+        <div class="container">
+            <h2 id="elevenlabs-heading">Set Up ElevenLabs for Voice</h2>
+            <p>Want to use ElevenLabs voice features in Athena UI? <strong>You will need your own ElevenLabs account and API key.</strong> Athena UI does not include an ElevenLabs key or pay for your ElevenLabs usage.</p>
+            <ol>
+                <li><strong>Create your account:</strong> Visit <a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">ElevenLabs</a>, sign up, and sign in. Review the available plans, API access, and usage allowances for the voice features you intend to use.</li>
+                <li><strong>Open API Keys:</strong> In your ElevenLabs dashboard, select <strong>Developers</strong> in the sidebar, then the <strong>API Keys</strong> tab.</li>
+                <li><strong>Create a key:</strong> Create a new API key and give it a recognizable name, such as <strong>Athena UI</strong>. If access restrictions are offered, grant only the permissions needed for the voice features you use.</li>
+                <li><strong>Copy it securely:</strong> Copy the key when it is created. ElevenLabs only displays the full key at creation; keep it private and never include it in website forms, reviews, screenshots, or support messages.</li>
+                <li><strong>Enter it during Athena UI onboarding:</strong> Paste your key into the <strong>ElevenLabs API key</strong> field when setting up the Athena UI program, then complete onboarding.</li>
+            </ol>
+            <p>ElevenLabs plan limits and charges apply separately from your Athena UI subscription. Voice requests send the text and any other content needed for the selected voice feature to ElevenLabs for processing under its policies.</p>
+            <p>Need help finding your key? Read <a href="https://elevenlabs.io/docs/help-center/technical/how-do-i-authorize-myself-using-an-api-key" target="_blank" rel="noopener noreferrer">ElevenLabs’ official API key instructions</a>. For Athena UI setup questions, use our <a href="contact.html">contact page</a>; for an issue or tailored-version request, use <a href="bug_report.html">our bug report and custom request form</a>. You can also <a href="meeras_outreach.html">subscribe to Meera’s updates</a>.</p>
+        </div>
+    </section>
     <!-- Coming Soon: Atlas Server -->
     <section class="coming-soon-section">
         <div class="container">
             <h2>Atlas Server (Coming Soon!)</h2>
-            <p>A <strong>local AI server</strong> that lets you run Athena UI’s agents <strong>completely offline</strong>, with no reliance on cloud providers. Reduce costs and keep your data private.</p>
-
-            <div class="feature-details">
-                <h3>What to Expect</h3>
-                <ul>
-                    <li><strong>UI-Trained TLM:</strong> A lightweight AI model trained specifically for UI tasks (e.g., analyzing screenshots, OCR).</li>
-                    <li><strong>Lower Costs:</strong> Run agents locally and avoid cloud API fees for UI-related tasks.</li>
-                    <li><strong>Faster Performance:</strong> No latency—your agents respond instantly.</li>
-                </ul>
-            </div>
-
-            <p><em>Target Launch: Within 3 months of reaching 5,000 subscribers.</em></p>
+            <p>A local AI server in development for Athena UI. Our goal is to bring more UI agent work onto your machine and reduce the cloud API costs associated with those tasks.</p>
+            <p>The developer’s commitment below concerns training a UI-focused TLM within three months of reaching 5,000 subscribers. Atlas Server is not yet available; this is not a promise that every agent task will work offline.</p>
         </div>
     </section>
 
@@ -236,26 +257,20 @@
     <section class="coming-soon-section">
         <div class="container">
             <h2>Android Apps (Coming Soon!)</h2>
-            <p>Chat with your agents on the go, upload images to local storage, and sync with your desktop Athena UI installation. <strong>Your data stays on your device—always.</strong></p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li><strong>Mobile Chat</strong>: Access your agents from your phone.</li>
-                <li><strong>Image Uploads</strong>: Add photos to your local vault for agents to analyze.</li>
-                <li><strong>Offline Mode</strong>: Works even without an internet connection.</li>
-            </ul>
+            <p>Planned companion apps will let you chat with your agents and upload photos to your desktop Athena UI installation’s local storage, with local backup support.</p>
+            <p>These apps are in development. Connection requirements and supported capabilities will be documented when available; offline operation is not promised.</p>
         </div>
     </section>
-
     <!-- Promise from the Developer -->
     <section class="promise-section">
         <div class="container">
             <h2>A Promise from the Developer</h2>
             <p>I’ve spent <strong>two years building Athena UI</strong> while working a full-time job—<strong>70-hour weeks driving a big rig over the road</strong>. In my off time, I poured my heart into this program because I believe in <strong>giving people control over their data and their AI tools</strong>.</p>
-            <p><strong>Your data is sacred.</strong> Athena UI keeps everything <strong>local and encrypted</strong>—no cloud storage, no prying eyes. Your secrets stay in your vault, on your machine.</p>
+            <p><strong>Your data is your data.</strong> Athena UI is built around a local, encrypted vault. Your stored memories and private records belong on your machine, under your control. When you choose cloud AI, the request and relevant context are sent to your selected provider for processing; that provider’s data policies apply.</p>
             <p><strong>Here’s my commitment to you:</strong></p>
             <ul>
-                <li><strong>5,000 Subscribers Goal:</strong> Once we hit 5,000 subscribers, I’ll launch the <strong>Atlas Server</strong> within 3 months. This will let you run your AI agents <strong>completely locally</strong>, with a UI-trained TLM to handle tasks like OCR and screen analysis—<strong>no cloud required</strong>.</li>
-                <li><strong>No Shortcuts:</strong> I’ve built this the right way—<strong>local-first, secure, and transparent</strong>. No hidden fees, no data mining, no compromises.</li>
+                <li><strong>5,000 Subscribers Goal:</strong> Within three months of reaching 5,000 subscribers, I commit to having a UI-trained TLM (Tiny Language Model) trained to facilitate local UI agent work through the upcoming Atlas Server, reducing the cloud API costs associated with those tasks.</li>
+                <li><strong>Local-first development:</strong> Keep storage and backups local wherever possible, explain when external services are used, and distinguish available features from our roadmap.</li>
             </ul>
             <p><em>Thank you for trusting me with your work. Let’s build the future—together.</em></p>
             <p class="signature">— Darryl J. H.</p>
