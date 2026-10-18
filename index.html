@@ -39,6 +39,7 @@
     <section class="feature-section" id="synergy">
         <div class="container">
             <h2>Meet Synergy: Two Coding Models. One Collaborative Workflow.</h2>
+            <p><strong>Ongoing development:</strong> Synergy is actively being developed. Updates will improve and refine the system over time. Availability and supported workflows depend on the installed release; the description below outlines the workflow being developed, not a guarantee that every capability is available in every build.</p>
             <p>Synergy isn’t another character. It pairs two coding models you choose—<strong>Code Model A</strong> and <strong>Code Model B</strong>—to analyze your request and discuss how to accomplish it.</p>
             <ul>
                 <li><strong>Choose your pair:</strong> Select available coding models through your configured providers.</li>
@@ -120,18 +121,23 @@
         </div>
     </section>
 
-    <!-- Team Collaboration -->
-    <section class="collaboration-section">
+    <!-- Team Collaboration: illustrative workflow, not an app screenshot -->
+    <section class="collaboration-section" aria-labelledby="collaboration-heading">
         <div class="container">
-            <h2>Agents That Work as a Team</h2>
-            <p>In Athena UI, your agents don’t just assist you—they <strong>collaborate with each other</strong>. Need a marketing campaign reviewed by a financial expert? Meera and Orion will team up. Stuck on code? Atlas and I will brainstorm solutions. You get <strong>real-time teamwork</strong> from experts who actually understand each other.</p>
+            <h2 id="collaboration-heading">Agents That Work as a Team</h2>
+            <p>Agents can consult one another using the tools and access you have authorized. Their agent-initiated discussions are visible in Collab Chats.</p>
             <div class="collaboration-demo">
-                <img src="assets/images/agent_collaboration_demo.gif" alt="Agents collaborating" class="demo-gif">
-                <p><em>Example: Meera drafts an email, loops in Atlas for technical input, and sends the final version—all in one seamless workflow.</em></p>
+                <h3>Example Collaboration Workflow</h3>
+                <ol>
+                    <li><strong>Meera receives a technical question</strong> in an inbox she is authorized to monitor.</li>
+                    <li><strong>Meera consults Atlas.</strong> If he also has permission to access the message, Atlas reviews it and offers technical input.</li>
+                    <li><strong>Meera prepares a reply</strong> incorporating Atlas’s feedback, subject to your configured sending permissions and approvals.</li>
+                    <li><strong>You can review the discussion</strong> on the Group Chat page under Collab Chats.</li>
+                </ol>
+                <p><em>This is an illustrative workflow, not a recording or screenshot of the application. A standalone desktop demonstration will be added when available.</em></p>
             </div>
         </div>
     </section>
-
     <!-- API Key Billing Retry -->
     <section class="feature-section">
         <div class="container">
@@ -311,6 +317,15 @@
         </div>
     </section>
 
+    <!-- Windows release and signing notice -->
+    <section class="feature-section" id="installation-notice" aria-labelledby="installation-heading">
+        <div class="container">
+            <h2 id="installation-heading">Before Installing on Windows</h2>
+            <p><strong>Code signing is pending.</strong> We are applying for app-signing credentials and are releasing Athena UI before those credentials are available. Early installers may be unsigned, and Windows may warn about an unrecognized publisher or block installation through SmartScreen or Smart App Control. These are different Windows protections, and the message you see depends on your system.</p>
+            <p>Athena UI is developed by JID Holdings LLC as a legitimate standalone desktop program. That statement is not a substitute for independent security checks. <strong>We do not recommend disabling Windows security protections to install it.</strong> If Windows blocks the installer, stop and <a href="contact.html">contact us</a> with the exact warning, or wait for a signed release. A signature identifies the publisher but does not guarantee that software is safe or that every warning will disappear.</p>
+            <p>Before running an installer, compare its SHA-256 checksum with the matching published release entry on our <a href="checksums.html">download verification and checksums page</a>. A matching checksum confirms file integrity against the published value; it is not a malware scan or proof of safety.</p>
+        </div>
+    </section>
     <!-- Footer -->
     <footer>
         <div class="container">
