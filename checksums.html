@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Verification and Checksums - Athena UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Athena UI</h1>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="contact.html">Contact</a>
+                <a href="bug_report.html">Report a Bug</a>
+                <a href="checksums.html" aria-current="page">Verify Downloads</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases">Release History</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section aria-labelledby="verification-heading">
+            <h1 id="verification-heading">Verify Your Athena UI Download</h1>
+            <p>Use a SHA-256 checksum to compare your downloaded installer with the exact file published for that release. Each installer version and filename needs its own checksum.</p>
+            <h2>Published Checksums</h2>
+            <p><strong>Pending publication:</strong> No installer checksums have been supplied for this page yet. Do not treat a file as verified until its exact filename, version, and SHA-256 value are published here. We will add release entries when the corresponding installers are finalized.</p>
+            <!-- Release maintainer: add only SHA-256 values calculated from the final distributed files. Preserve older entries. Never use an example hash as a real release hash. -->
+            <p>Browse the <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases">official release history</a> for published installers and release notes. If your version is not listed with a checksum here, <a href="contact.html">ask us for its verification details</a>.</p>
+        </section>
+        <section aria-labelledby="windows-heading">
+            <h2 id="windows-heading">Calculate SHA-256 on Windows</h2>
+            <ol>
+                <li>Download an installer from the official release location. Do not run it yet.</li>
+                <li>Open PowerShell and run the command below, replacing the example path with the actual downloaded filename.</li>
+                <li>Compare the complete value in the <strong>Hash</strong> column with the published SHA-256 for that exact filename and version. Letter case does not matter; every hexadecimal digit must match.</li>
+                <li>If the values differ, do not run the file. Delete that download, download again from the official source, and contact us if the mismatch persists.</li>
+            </ol>
+            <pre style="overflow-x:auto; padding:1rem;"><code>Get-FileHash -Algorithm SHA256 -LiteralPath "C:\Users\YourName\Downloads\EXACT-INSTALLER-FILENAME.exe"</code></pre>
+            <p><strong>A checksum verifies a match, not safety.</strong> It does not identify the publisher, scan for malware, or protect you if both the installer and the published checksum are compromised. Keep Windows protections enabled and consider scanning the file with your security software.</p>
+        </section>
+        <section aria-labelledby="signing-heading">
+            <h2 id="signing-heading">Code Signing and Windows Warnings</h2>
+            <p>JID Holdings LLC is applying for app-signing credentials. Early Athena UI installers may be released before signing is available. Windows may display an unknown-publisher warning or block an unsigned installer. SmartScreen and Smart App Control are separate protections; behavior varies by system.</p>
+            <p>We do not recommend turning off Windows security protections. If installation is blocked, contact us with the exact warning or wait for a signed release. Code signing helps identify a publisher, but does not guarantee safety or the absence of warnings.</p>
+            <p>When reporting a warning through our <a href="bug_report.html">bug report form</a>, include the installer filename, version, Windows version, and warning text. Never send API keys, passwords, or private records.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>JID Holdings LLC &mdash; Athena UI</p>
+            <p><a href="index.html">Home</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="checksums.html">Verify Downloads</a></p>
+        </div>
+    </footer>
+</body>
+</html>
