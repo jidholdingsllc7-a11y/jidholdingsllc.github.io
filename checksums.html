@@ -25,9 +25,15 @@
             <h1 id="verification-heading">Verify Your Athena UI Download</h1>
             <p>Use a SHA-256 checksum to compare your downloaded installer with the exact file published for that release. Each installer version and filename needs its own checksum.</p>
             <h2>Published Checksums</h2>
-            <p>Browse the <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases">official release history</a> for installers and release notes. If your version is not listed below, <a href="contact.html">ask us for its verification details</a>.</p>
-            <h3>Athena UI 3.6.1</h3>
-            <p>SHA-256 values supplied in <a href="CHECKSUMS.txt" download>CHECKSUMS.txt</a>. Match the filename exactly before comparing your download.</p>
+            <p>Compare the complete SHA-256 value for the exact file you downloaded. The latest package below includes Synergy, confirmed working by the developer on the lab laptop.</p>
+            <h3>Latest package: Athena UI 3.6.1 — build 20261019_1411</h3>
+            <p><a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases/latest">Download from the official release page</a> or <a href="CHECKSUMS.txt" download>download CHECKSUMS.txt</a>.</p>
+            <h4>Windows installer ZIP archive</h4>
+            <p><strong>Filename:</strong> <code>AthenaUI Setup 3.6.1_20261019_1411.zip</code></p>
+            <pre style="overflow-x:auto; padding:1rem;"><code>1eb66aa8fe5db504b7e61fd3784a03cc5cf92a1ef11a190c53579e5f21ad11ff</code></pre>
+            <p>This developer-supplied SHA-256 applies only to the ZIP archive named above, not to an extracted EXE or blockmap. We have not independently hashed the archive for this website update. A matching hash verifies integrity against the published value; it is not a malware scan or proof of safety.</p>
+            <h3>Earlier Athena UI 3.6.1 files (before Synergy)</h3>
+            <p>Historical values are preserved below and in CHECKSUMS.txt. They do not verify the new ZIP package.</p>
             <h4>Windows installer</h4>
             <p><strong>Filename:</strong> <code>AthenaUI Setup 3.6.1.exe</code></p>
             <pre style="overflow-x:auto; padding:1rem;"><code>7dd97b0224566c5e652acf568b2fff972f03745450704bbeaa68fc1e5761c432</code></pre>
@@ -42,10 +48,9 @@
                 <li>Download an installer from the official release location. Do not run it yet.</li>
                 <li>Open PowerShell and run the command below, replacing the example path with the actual downloaded filename.</li>
                 <li>Compare the complete value in the <strong>Hash</strong> column with the published SHA-256 for that exact filename and version. Letter case does not matter; every hexadecimal digit must match.</li>
-                <li>If the values differ, do not run the file. Delete that download, download again from the official source, and contact us if the mismatch persists.</li>
             </ol>
-            <pre style="overflow-x:auto; padding:1rem;"><code>Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\AthenaUI Setup 3.6.1.exe"</code></pre>
-            <p><strong>A checksum verifies a match, not safety.</strong> It does not identify the publisher, scan for malware, or protect you if both the installer and the published checksum are compromised. Keep Windows protections enabled and consider scanning the file with your security software.</p>
+            <pre style="overflow-x:auto; padding:1rem;"><code>Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\AthenaUI Setup 3.6.1_20261019_1411.zip"</code></pre>
+            <p>This command verifies the downloaded ZIP archive. Compare its hash before extracting it. The archive checksum does not serve as a checksum for the installer inside it.</p>
         </section>
         <section aria-labelledby="signing-heading">
             <h2 id="signing-heading">Code Signing and Windows Warnings</h2>
