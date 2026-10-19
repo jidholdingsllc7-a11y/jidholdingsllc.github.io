@@ -25,9 +25,16 @@
             <h1 id="verification-heading">Verify Your Athena UI Download</h1>
             <p>Use a SHA-256 checksum to compare your downloaded installer with the exact file published for that release. Each installer version and filename needs its own checksum.</p>
             <h2>Published Checksums</h2>
-            <p><strong>Pending publication:</strong> No installer checksums have been supplied for this page yet. Do not treat a file as verified until its exact filename, version, and SHA-256 value are published here. We will add release entries when the corresponding installers are finalized.</p>
-            <!-- Release maintainer: add only SHA-256 values calculated from the final distributed files. Preserve older entries. Never use an example hash as a real release hash. -->
-            <p>Browse the <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases">official release history</a> for published installers and release notes. If your version is not listed with a checksum here, <a href="contact.html">ask us for its verification details</a>.</p>
+            <p>Browse the <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases">official release history</a> for installers and release notes. If your version is not listed below, <a href="contact.html">ask us for its verification details</a>.</p>
+            <h3>Athena UI 3.6.1</h3>
+            <p>SHA-256 values supplied in <a href="CHECKSUMS.txt" download>CHECKSUMS.txt</a>. Match the filename exactly before comparing your download.</p>
+            <h4>Windows installer</h4>
+            <p><strong>Filename:</strong> <code>AthenaUI Setup 3.6.1.exe</code></p>
+            <pre style="overflow-x:auto; padding:1rem;"><code>7dd97b0224566c5e652acf568b2fff972f03745450704bbeaa68fc1e5761c432</code></pre>
+            <h4>Updater blockmap (not the installer)</h4>
+            <p><strong>Filename:</strong> <code>AthenaUI Setup 3.6.1.exe.blockmap</code></p>
+            <pre style="overflow-x:auto; padding:1rem;"><code>4b8e92d012de0a27528b11e3f630c548ae66cc23b6a850420663fdd0b19c42ff</code></pre>
+            <!-- Release maintainer: preserve older release entries and publish hashes only for the corresponding final distributed files. -->
         </section>
         <section aria-labelledby="windows-heading">
             <h2 id="windows-heading">Calculate SHA-256 on Windows</h2>
@@ -37,7 +44,7 @@
                 <li>Compare the complete value in the <strong>Hash</strong> column with the published SHA-256 for that exact filename and version. Letter case does not matter; every hexadecimal digit must match.</li>
                 <li>If the values differ, do not run the file. Delete that download, download again from the official source, and contact us if the mismatch persists.</li>
             </ol>
-            <pre style="overflow-x:auto; padding:1rem;"><code>Get-FileHash -Algorithm SHA256 -LiteralPath "C:\Users\YourName\Downloads\EXACT-INSTALLER-FILENAME.exe"</code></pre>
+            <pre style="overflow-x:auto; padding:1rem;"><code>Get-FileHash -Algorithm SHA256 -LiteralPath "$HOME\Downloads\AthenaUI Setup 3.6.1.exe"</code></pre>
             <p><strong>A checksum verifies a match, not safety.</strong> It does not identify the publisher, scan for malware, or protect you if both the installer and the published checksum are compromised. Keep Windows protections enabled and consider scanning the file with your security software.</p>
         </section>
         <section aria-labelledby="signing-heading">
