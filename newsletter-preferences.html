@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsletter Preferences | Athena UI</title>
+<meta name="description" content="Request Athena UI newsletter signup or unsubscribe from marketing emails.">
+<link rel="stylesheet" href="styles.css">
+<style>main{max-width:760px;margin:2rem auto;padding:1.5rem}section{margin:2rem 0}label{display:block;margin-top:1rem}input:not([type=checkbox]){display:block;box-sizing:border-box;width:100%;padding:.7rem;margin:.4rem 0}button{margin-top:1rem;padding:.8rem 1.2rem}.trap{display:none}.setup-status{font-weight:bold}</style>
+</head>
+<body><main>
+<nav><a href="index.html">Home</a> · <a href="feedback-form.html">Feedback and support</a></nav>
+<h1>Newsletter preferences</h1>
+<p>Use these forms to send a preference request to Meera at meera@jidholdingsllc.com. Formspree receives and forwards your submission; it does not by itself update our subscriber list.</p>
+<section aria-labelledby="signup-heading">
+<h2 id="signup-heading">Request newsletter signup</h2>
+<p>Receive Athena UI product news, practical tips, and occasional offers. Signup requests require processing and email confirmation before activation.</p>
+<p class="setup-status" role="status"></p>
+<!-- Formspree recipient configured by the site owner: meera@jidholdingsllc.com. -->
+<form action="https://formspree.io/f/xgaoglqg" method="post">
+<input type="hidden" name="subject" value="Athena UI | Newsletter OPT IN request">
+<input type="hidden" name="newsletter_action" value="subscribe_request">
+<input type="hidden" name="consent_version" value="newsletter-v1">
+<label class="trap" aria-hidden="true">Leave blank<input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+<label for="signup-name">Name (optional)</label><input id="signup-name" name="name" autocomplete="name" maxlength="150">
+<label for="signup-email">Email</label><input id="signup-email" type="email" name="email" autocomplete="email" maxlength="254" required>
+<label><input type="checkbox" name="newsletter_consent" value="I request Athena UI product news, tips, and occasional promotional emails. I can unsubscribe at any time." required> I want Athena UI product news, tips, and occasional promotional emails. I can unsubscribe at any time.</label>
+<button type="submit">Send signup request</button>
+</form>
+</section>
+<section aria-labelledby="unsubscribe-heading">
+<h2 id="unsubscribe-heading">Unsubscribe</h2>
+<p>Request removal from Athena UI marketing emails. No login, explanation, or marketing consent is required. This does not stop necessary service or billing messages.</p>
+<p class="setup-status" role="status"></p>
+<form action="https://formspree.io/f/xgaoglqg" method="post">
+<input type="hidden" name="subject" value="Athena UI | Newsletter OPT OUT request">
+<input type="hidden" name="newsletter_action" value="unsubscribe_request">
+<input type="hidden" name="form_version" value="unsubscribe-v1">
+<label class="trap" aria-hidden="true">Leave blank<input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+<label for="unsubscribe-email">Email to unsubscribe</label><input id="unsubscribe-email" type="email" name="email" autocomplete="email" maxlength="254" required>
+<button type="submit">Send unsubscribe request</button>
+</form>
+<p>Requests require processing. You can also request removal by emailing <a href="mailto:meera@jidholdingsllc.com?subject=Unsubscribe%20from%20Athena%20UI%20newsletter">meera@jidholdingsllc.com</a>.</p>
+</section>
+<p>These forms send your information through Formspree to Meera's inbox. Do not include passwords, license keys, or API keys.</p>
+<script>
+for(const form of document.querySelectorAll('form')){
+if(form.action.includes('REPLACE_')){form.parentElement.querySelector('.setup-status').textContent='This form is awaiting configuration. Please email Meera for now.';form.querySelector('button').disabled=true;}
+form.addEventListener('submit',event=>{if(form.action.includes('REPLACE_'))event.preventDefault();});
+}
+</script>
+</main></body></html>
