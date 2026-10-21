@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meera's Outreach - Athena UI</title>
+    <title>Meera's Newsletter - Athena UI</title>
+    <meta name="description" content="Request Athena UI newsletter signup or unsubscribe. Get product updates, practical marketing tips, and occasional offers from Meera.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,12 +16,12 @@
                 <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
                 <h1>Athena UI</h1>
             </div>
-            <nav>
+            <nav aria-label="Main navigation">
                 <a href="index.html">Home</a>
-                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="meeras_outreach.html" aria-current="page">Newsletter</a>
                 <a href="contact.html">Contact</a>
                 <a href="bug_report.html">Report a Bug</a>
-                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI.git" target="_blank">Download Athena UI</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases/latest" target="_blank" rel="noopener noreferrer">Download Athena UI</a>
             </nav>
         </div>
     </header>
@@ -29,46 +30,45 @@
     <section class="hero">
         <div class="container">
             <h1>Join Meera's Newsletter</h1>
-            <p>Stay updated with the latest tips, marketing strategies, and exclusive offers from Athena UI. Subscribe to Meera's newsletter and never miss an update!</p>
+            <p>Athena UI product updates, practical marketing tips, and occasional offers from Meera, an automated AI marketing agent operated by Darryl Harlow.</p>
         </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section class="newsletter-section">
+    <!-- Newsletter Preferences -->
+    <section class="newsletter-section" aria-labelledby="preferences-heading">
         <div class="container">
             <div class="newsletter-form">
-                <h2>Opt In to Receive Messages</h2>
-                <form id="opt-in-form" action="mailto:meera@jidholdingsllc.com" method="POST" enctype="text/plain">
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <input type="text" name="name" placeholder="Your name (optional)">
-                    <button type="submit">Opt In</button>
-                </form>
+                <h2 id="preferences-heading">Your Newsletter Preferences</h2>
+                <h3>Opt In to Receive Messages</h3>
+                <p>Use our signup form to provide your email address and explicit consent to receive the newsletter.</p>
+                <p><a class="cta-button" href="newsletter-preferences.html#signup-heading">Request Newsletter Signup</a></p>
 
-                <h2>Opt Out of Messages</h2>
-                <form id="opt-out-form" action="mailto:meera@jidholdingsllc.com" method="POST" enctype="text/plain">
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <button type="submit">Opt Out</button>
-                </form>
+                <h3>Opt Out of Messages</h3>
+                <p>You can request removal from the newsletter without signing up for anything else.</p>
+                <p><a class="cta-button" href="newsletter-preferences.html#unsubscribe-heading">Request Unsubscribe</a></p>
+
+                <p>These forms submit through Formspree to meera@jidholdingsllc.com without opening your email app. Requests require processing; signup requires email confirmation before activation. Formspree does not automatically update our subscriber list.</p>
+                <p>Contacting support does not subscribe you to marketing emails. Need help with your preferences? <a href="mailto:meera@jidholdingsllc.com">Email Meera</a>.</p>
             </div>
         </div>
     </section>
 
     <!-- Why Subscribe? -->
-    <section class="why-subscribe">
+    <section class="why-subscribe" aria-labelledby="benefits-heading">
         <div class="container">
-            <h2>Why Subscribe?</h2>
+            <h2 id="benefits-heading">Why Subscribe?</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <h3>Marketing Tips</h3>
-                    <p>Get exclusive strategies to grow your business, crafted by Meera herself.</p>
+                    <p>Practical ideas for planning campaigns, communicating clearly, and using Athena UI's marketing tools.</p>
                 </div>
                 <div class="benefit-card">
                     <h3>Product Updates</h3>
-                    <p>Be the first to know about new Athena UI features and improvements.</p>
+                    <p>News about Athena UI features, improvements, and useful workflows.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Exclusive Offers</h3>
-                    <p>Subscribers get early access to promotions and discounts.</p>
+                    <h3>Occasional Offers</h3>
+                    <p>Information about available promotions, with their terms explained.</p>
                 </div>
             </div>
         </div>
@@ -77,8 +77,9 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 JID Holdings LLC. All rights reserved.</p>
-            <p>Contact us at <a href="mailto:agent@jidholdingsllc.com">agent@jidholdingsllc.com</a></p>
+            <p>JID Holdings LLC · Athena UI</p>
+            <p>Newsletter and general inquiries: <a href="mailto:meera@jidholdingsllc.com">meera@jidholdingsllc.com</a></p>
+            <p>Feedback and support: <a href="feedback-form.html">Open our feedback form</a></p>
         </div>
     </footer>
 </body>
