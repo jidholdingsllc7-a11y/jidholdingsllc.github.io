@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback and Support | Athena UI</title>
+<meta name="description" content="Send Athena UI feedback, report a problem, or ask a technical question.">
+<link rel="stylesheet" href="styles.css">
+<style>main{max-width:760px;margin:2rem auto;padding:1.5rem}label{display:block;margin-top:1rem}input,select,textarea{display:block;box-sizing:border-box;width:100%;padding:.7rem;margin:.4rem 0}button{margin-top:1rem;padding:.8rem 1.2rem}.trap{display:none}#setup-status{font-weight:bold}</style>
+</head>
+<body><main>
+<nav><a href="index.html">Home</a> · <a href="newsletter-preferences.html">Newsletter preferences</a></nav>
+<h1>Feedback and technical support</h1>
+<p>Messages go to our shared feedback inbox, feedback@jidholdingsllc.com. Meera and our technical team can review your request.</p>
+<p>Do not include passwords, license keys, API keys, or sensitive personal information. Remove these from any diagnostic details.</p>
+<p id="setup-status" role="status"></p>
+<!-- Formspree recipient configured by the site owner: feedback@jidholdingsllc.com. -->
+<form action="https://formspree.io/f/mjygnera" method="post">
+<input type="hidden" name="subject" value="Athena UI | Feedback and Support">
+<input type="hidden" name="form_version" value="feedback-v1">
+<label class="trap" aria-hidden="true">Leave blank<input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+<label for="name">Name</label><input id="name" name="name" autocomplete="name" maxlength="150" required>
+<label for="email">Your email</label><input id="email" type="email" name="email" autocomplete="email" maxlength="254" required>
+<label for="category">Request type</label><select id="category" name="category" required><option value="">Choose a category</option><option>Bug report</option><option>Technical question</option><option>Product feedback</option><option>Billing or license help</option></select>
+<label for="summary">Short summary</label><input id="summary" name="summary" maxlength="200" required>
+<label for="version">Athena UI version (if known)</label><input id="version" name="athena_version" maxlength="100">
+<label for="os">Operating system (if relevant)</label><input id="os" name="operating_system" maxlength="150">
+<label for="expected">What did you expect? (for a problem report)</label><textarea id="expected" name="expected_behavior" rows="3" maxlength="4000"></textarea>
+<label for="actual">What happened, or what would you like to ask?</label><textarea id="actual" name="message" rows="6" maxlength="10000" required></textarea>
+<label for="steps">Steps to reproduce (if applicable)</label><textarea id="steps" name="steps_to_reproduce" rows="4" maxlength="6000"></textarea>
+<p>Submitting sends these details to Formspree for processing and to our feedback inbox. This does not subscribe you to marketing emails.</p>
+<button type="submit">Send feedback</button>
+</form>
+<p>You can also email <a href="mailto:feedback@jidholdingsllc.com">feedback@jidholdingsllc.com</a>.</p>
+<script>
+const form=document.querySelector('form');
+if(form.action.includes('REPLACE_')){document.querySelector('#setup-status').textContent='This form is awaiting configuration. Please use the email link below for now.';form.querySelector('button').disabled=true;}
+form.addEventListener('submit',event=>{if(form.action.includes('REPLACE_'))event.preventDefault();});
+</script>
+</main></body></html>
