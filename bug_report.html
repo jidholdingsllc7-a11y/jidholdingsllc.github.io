@@ -1,11 +1,82 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Report a Bug or Discuss Custom Requirements | Athena UI</title><link rel="stylesheet" href="styles.css"><style>main{max-width:760px;margin:2rem auto;padding:1.5rem}</style></head><body><main>
-<nav><a href="index.html">Home</a> · <a href="meeras_outreach.html">Newsletter</a> · <a href="contact.html">Contact</a></nav>
-<h1>Report a bug</h1>
-<p>Use our structured support form to describe what happened, what you expected, your Athena UI version, and steps to reproduce the issue.</p>
-<p><a href="feedback-form.html">Open feedback and support form</a></p>
-<p>Submissions go through Formspree to feedback@jidholdingsllc.com, where Meera and the technical team can review them. Remove passwords, API keys, license keys, and sensitive personal information from diagnostic details.</p>
-<h2>Custom requirements</h2>
-<p>To discuss a potential custom version or integration, <a href="mailto:meera@jidholdingsllc.com?subject=Athena%20UI%20custom%20requirements">email Meera</a> with your goals and the programs you want to connect. Feasibility and scope require review.</p>
-<footer><p>JID Holdings LLC · Athena UI</p></footer>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Bug or Request a Custom Version - Athena UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/jidholdingsllclogo.png" alt="JID Holdings LLC Logo">
+                <h1>Athena UI</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="meeras_outreach.html">Newsletter</a>
+                <a href="contact.html">Contact</a>
+                <a href="bug_report.html">Report a Bug</a>
+                <a href="https://github.com/jidholdingsllc7-a11y/AthenaUI/releases/latest" target="_blank" rel="noopener noreferrer">Download Athena UI</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bug-report-section">
+        <div class="container">
+            <h1>Report a Bug or Request a Custom Version</h1>
+            <p>Found a bug or want to discuss a custom version? Send a structured request to our shared feedback inbox. Meera can coordinate technical questions with the team.</p>
+
+            <form id="bug-report-form" action="https://formspree.io/f/mjygnera" method="POST">
+                <input type="hidden" name="_subject" value="Athena UI | Bug Report or Custom Request">
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+                <p><label for="report-name">Your name</label><br><input id="report-name" type="text" name="name" autocomplete="name" maxlength="120" required></p>
+                <p><label for="report-org">Organization (optional)</label><br><input id="report-org" type="text" name="organization" autocomplete="organization" maxlength="160"></p>
+                <p><label for="report-email">Reply email</label><br><input id="report-email" type="email" name="email" autocomplete="email" maxlength="254" required></p>
+                <p><label for="report-type">Request type</label><br><select id="report-type" name="request_type" required>
+                    <option value="bug">Bug report</option>
+                    <option value="custom">Custom version inquiry</option>
+                </select></p>
+                <p><label for="report-summary">Short summary</label><br><input id="report-summary" type="text" name="summary" maxlength="200" required></p>
+                <p><label for="report-version">Athena UI version and operating system (for bugs)</label><br><input id="report-version" type="text" name="version_and_os" maxlength="200"></p>
+                <p><label for="report-description">Issue details or requested integrations</label><br><textarea id="report-description" name="description" rows="6" maxlength="10000" required></textarea></p>
+                <p><label for="report-expected">Expected behavior (for bugs)</label><br><textarea id="report-expected" name="expected_behavior" rows="3" maxlength="4000"></textarea></p>
+                <p><label for="report-actual">Actual behavior (for bugs)</label><br><textarea id="report-actual" name="actual_behavior" rows="3" maxlength="4000"></textarea></p>
+                <p><label for="report-steps">Steps to reproduce (for bugs)</label><br><textarea id="report-steps" name="steps_to_reproduce" rows="4" maxlength="6000"></textarea></p>
+                <p>Do not include passwords, API keys, license keys, or sensitive personal information. Your request is processed by Formspree and forwarded to feedback@jidholdingsllc.com. Submitting a request does not subscribe you to the newsletter.</p>
+                <button type="submit">Send request</button>
+            </form>
+            <p>After submitting, check Formspree’s confirmation or error page. If submission fails, email <a href="mailto:feedback@jidholdingsllc.com">feedback@jidholdingsllc.com</a>.</p>
+        </div>
+    </section>
+
+    <section class="custom-solutions">
+        <div class="container">
+            <h2>Need a Tailored Version of Athena UI?</h2>
+            <p>We build custom versions for industries like trucking, construction, and medical practices. Tell us what you need!</p>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>Single User</h3>
+                    <p>Perfect for freelancers or small business owners who need chat and basic tools.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Multi-User</h3>
+                    <p>For teams that need collaboration features and shared workflows.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Enterprise</h3>
+                    <p>Full customization, priority support, and integrations with your existing tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JID Holdings LLC. All rights reserved.</p>
+            <p>Support: <a href="mailto:feedback@jidholdingsllc.com">feedback@jidholdingsllc.com</a> &middot; General inquiries: <a href="mailto:meera@jidholdingsllc.com">meera@jidholdingsllc.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
